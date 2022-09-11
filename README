@@ -1,0 +1,25 @@
+Preklad programu:
+make
+
+Popis programu:
+Program sa pripojí na server s elektronickou poštou, na ktorý sa prihlási pomocou údajov z autentifikačneho súboru.
+Stiahnuté správy ukladá do zložky udanej povinným parametrom. Spravý sa ukladaju s názvom podla predmetu e-mailu.
+Sťahovanie veľkeho množstva správ môže presiahnuť až niekoľko minút. Pri testovaní sťahovania sprav z pop3.stud.fit.vutbr.cz
+sa stiahnutie 1005 sprav vyšplhalo až na 15 minút.
+
+Príklady spustenia:
+./popcl pop.seznam.cz -a auth_file -o out_dir
+./popcl pop.seznam.cz -a auth_file -o out_dir -d -T
+./popcl pop.seznam.cz -a auth_file -o out_dir -n 
+./popcl pop.seznam.cz -a auth_file -o out_dir -S
+./popcl pop.seznam.cz -a auth_file -o out_dir -T
+
+Príklad autentifikacneho súboru:
+username = kamikadze420
+password = isaproj1
+
+Zoznam súborov:
+popcl.cpp
+README
+manual.pdf
+MakeFile
